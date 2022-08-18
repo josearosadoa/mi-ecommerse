@@ -101,10 +101,12 @@ main{
 
 .header{
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 77%;
+  z-index: 30;
+  color: rgb(0, 0, 0);
 }
 
 .scroll-header{
@@ -116,13 +118,13 @@ main{
   height: 3.5rem;
   display: flex;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding-left:  15rem;
   gap: 6rem;
 }
 
 .nav--logo{
   display: flex;
-  width: 10.5rem;
+  width: 7.5rem;
   fill: var(--first-color);
  
 }
@@ -176,9 +178,8 @@ main{
   display: flex;
   align-items: center;
   column-gap: 1rem;
-  padding-left: 65%;
+  padding-left: 60%;
 }
-
 
 .nav--cart{
   position: relative;
@@ -212,7 +213,7 @@ main{
 .cart{
   width: 100%;
   height: 100%;
-  max-width: 400px;
+  max-width: 270px;
   position: absolute;
   top: 0;
   right: 0;
@@ -220,22 +221,16 @@ main{
   box-shadow: -4px 5px 10px rgb(147, 147, 147);
 }
 
-.contenedor-productos{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 10rem;
-  
-}
 .product-card{
 width: 20rem;
 }
 .introduccion{
   display: flex;
   flex-direction: column;
-  width: 40rem;
+  width: 60rem;
   height: 30rem;
   margin-top: 15rem;
-  padding-left: 5rem;
+  padding-left: 16rem;
   gap: 4rem;
 }
 .introduccion h2{
@@ -275,6 +270,65 @@ width: 20rem;
   border-style:none;
   color: rgb(247, 242, 242) ;
   font-weight: bold;
+
+}
+
+.contenedor-aside{
+  display: flex;
+  height: max-content;
+  justify-content: flex-end;
+  width: max-content;
+  position: absolute;
+  margin-left: 82rem;
+  margin-top: -49rem;
+  background-color: rgb(188, 72, 72);
+}
+
+.contenedor-aside img{
+  padding-top: 22rem;
+  max-width: 35rem;
+}
+
+
+
+.contenedor__main{
+  width: max-content;
+}
+.contenedor__main-productos{
+   display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 6rem;
+    padding: 4rem 34rem;
+
+}
+
+.contenedor__elementos{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 80rem;
+  text-align: center;
+  height: 12rem;
+  margin-top: 17rem;
+  margin-left: 30rem;
+}
+
+.contenedor__elementos-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color:rgb(0, 0, 0)
+    
+  
+}
+
+.contenedor__elementos-style a{
+  font-size: 1.2rem;
+}
+
+.contenedor__elementos-style strong{
 
 }
 
