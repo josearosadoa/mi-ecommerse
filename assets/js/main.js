@@ -87,13 +87,14 @@ function showProducts( products ){
 
     products.map( product => {
         fragment += `
-        <div class="product-card" id="${product.id}">
-        <div class="product__card-style">
+        <div class="product-card product__card-style" id="${product.id}">
+        
             <img src=${product.image} alt="">
+           
             <button class="btn-add">+</button>
             <p>$${product.price}<span>|Stock:${product.quantity}</span></p>
             <p>${product.name}</p>
-            <div>
+            
         </div>
         ` 
     } )
